@@ -30,7 +30,7 @@ RUN apt -qq update \
     --no-install-recommends \
  && rm -rf /var/cache /var/lib/{apt,dpkg,cache,log}
 
-RUN npm i -g @ionic/cli \
+RUN npm i -g @ionic/cli @angular/cli \
  && npm cache clear --force \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /root/.npm/_log
 
